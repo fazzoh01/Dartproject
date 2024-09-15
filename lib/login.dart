@@ -42,7 +42,7 @@ Future login() async {
     }
     else {
     print("incorrect password or username");
-    stdout.write('Press [1. for reset password or any key to sexit]: ');
+    stdout.write('Press [1. for reset password or any key to exit]: ');
           var reg = stdin.readLineSync();
           if(reg == '1'){
             passwordreset();
@@ -54,7 +54,7 @@ Future login() async {
     
   } else {
     print("incorrect password or username");
-    stdout.write('Press [1. for reset password or any key to sexit]: ');
+    stdout.write('Press [1. for reset password or any key to exit]: ');
           var reg = stdin.readLineSync();
           if(reg == '1'){
             passwordreset();
