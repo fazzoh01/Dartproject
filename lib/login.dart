@@ -15,7 +15,7 @@ Future login() async {
   var user_password = stdin.readLineSync();
   stdin.echoMode = true;
   print("");
-  var db_usernames = await conn.query("SELECT username FROM student");
+  var db_usernames = await conn.query("SELECT username FROM registration");
   var userList = [];
   for (var user in db_usernames) {
     userList.add(user.first.toString());
@@ -23,9 +23,9 @@ Future login() async {
   if (userList.contains(user_username)) {
     var u_username = user_username;
 
-    var db_password = await conn.query("SELECT password FROM student WHERE username=?", [u_username]);
+    var db_password = await conn.query("SELECT password FROM registration WHERE username=?", [u_username]);
     var names = [];
-    var db_names = await conn.query("select * from student where username=?", [u_username]);
+    var db_names = await conn.query("select * from registration where username=?", [u_username]);
 
     for (var name in db_names.toList()) {
       names.add(name[0].toString());

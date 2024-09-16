@@ -70,7 +70,7 @@ Future userRegister() async {
   if (pasword == verPassword) {
     password = pasword;
     var user_data_insert = await conn.query(
-      'insert into student values(?,?,?,?,?,?,?,?)',
+      'insert into REGISTRATION values(?,?,?,?,?,?,?,?)',
       [id, fname, lname, gender, department, collegue, username, password,]);
   await conn.close();
     print("Thank you for using our registration menu");
