@@ -42,7 +42,7 @@ Future passwordreset() async {
               'update registration set password =? where lname = ?',[verset, lername]);
          print('welcome $infname $lername:Your password reset is successfully\n');
           
-          stdout.write('Press 1 for login or any key for exit:');
+          stdout.write('Press 1 for login, or any key for exit:');
           var log = stdin.readLineSync();
           if (log == '1') {
             login();

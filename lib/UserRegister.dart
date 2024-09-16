@@ -81,7 +81,7 @@ Future userRegister() async {
     print("1. Yes");
     print("2. No");
 
-    stdout.write("Press (1) to accept login page or (2) to cancel ");
+    stdout.write("Press (1) to accept login page, or (2) to cancel ");
     var userAcception = stdin.readLineSync();
     if (userAcception == "1") {
       login();

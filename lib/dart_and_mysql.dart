@@ -4,7 +4,7 @@ import 'UserRegister.dart';
 import 'login.dart';
 
 void main() async {
-  print("===== Welcome to Our System =====");
+  print("===== Welcome to Our system =====");
   print("");
   print("=== Select option You want below ====");
   print("=== 1. Login                     ====");
